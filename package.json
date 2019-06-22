@@ -1,0 +1,14 @@
+{
+  "name": "tasc-coding-exe",
+  "version": "1.0.0",
+  "description": "tasc coding challenge",
+  "main": "tasc.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Marco Aguirre",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  }
+}
