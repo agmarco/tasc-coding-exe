@@ -4,11 +4,24 @@
   "description": "tasc coding challenge",
   "main": "tasc.js",
   "scripts": {
-    "test": "test"
+    "tsc": "tsc",
+    "run": "tsc && node dist/tasc.js ",
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ts-node src/tasc.ts --watch src",
+    "test": "jest"
   },
   "author": "Marco Aguirre",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@types/node": "^12.0.10",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0"
   }
 }

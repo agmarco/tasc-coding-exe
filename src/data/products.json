@@ -1,0 +1,58 @@
+[{
+        "id": 0,
+        "name": "16lb bag of Skittles",
+        "price": 16,
+        "exempt": true,
+        "imported": false
+    },
+    {
+        "id": 1,
+        "name": "Walkman",
+        "price": 99.99,
+        "exempt": false,
+        "imported": false
+    },
+    {
+        "id": 2,
+        "name": "Bag of microwave Popcorn",
+        "price": 0.99,
+        "exempt": true
+    },
+    {
+        "id": 3,
+        "name": "Imported bag of Vanilla-Hazelnut Coffee",
+        "price": 11,
+        "imported": true,
+        "exempt": true
+    },
+    {
+        "id": 4,
+        "name": "Imported Vespa",
+        "price": 15001.25,
+        "imported": true
+    },
+    {
+        "id": 5,
+        "name": "Imported crate of Almond Snickers",
+        "price": 75.99,
+        "imported": true,
+        "exempt": true
+    },
+    {
+        "id": 6,
+        "name": "Discman",
+        "price": 55
+    },
+    {
+        "id": 7,
+        "name": "Imported Bottle of Wine",
+        "price": 10,
+        "imported": true
+    },
+    {
+        "id": 8,
+        "name": "300# bag of Fair-Trade Coffee",
+        "price": 997.99,
+        "exempt": true
+    }
+]

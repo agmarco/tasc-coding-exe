@@ -1,0 +1,7 @@
+{
+    "baseRate": 0.1,
+    "exemptRate": 0,
+    "importRate": 0.05,
+    "taxRoundMultiple": 0.05,
+    "totalRoundMultiple": 0.01
+}

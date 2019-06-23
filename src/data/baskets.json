@@ -1,0 +1,35 @@
+[
+    {
+        "products": [{
+                "id": 1,
+                "name": "16lb bag of Skittles",
+                "quantity": "1"
+            },
+            {
+                "id": 2,
+                "name": "Walkman",
+                "quantity": "1"
+            },
+            {
+                "id": 2,
+                "name": "Walkman",
+                "quantity": "1"
+            }
+
+        ]
+    },
+    {
+        "products": [{
+                "id": 1,
+                "name": "16lb bag of Skittles",
+                "quantity": "1"
+            },
+            {
+                "id": 2,
+                "name": "Walkman",
+                "quantity": "1"
+            }
+
+        ]
+    }
+]
