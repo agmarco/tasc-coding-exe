@@ -8,7 +8,7 @@
     "run": "tsc && node dist/tasc.js ",
     "start": "npm run build:live",
     "build:live": "nodemon --exec ts-node src/tasc.ts --watch src",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "author": "Marco Aguirre",
   "license": "ISC",
