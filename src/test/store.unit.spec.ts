@@ -2,6 +2,7 @@ import { getStore } from "../providers/storeProvider";
 
 describe("store test", () => {
     const str = getStore();
+
     it("should create a store", () => {
         expect(str).not
         .toBe(null);

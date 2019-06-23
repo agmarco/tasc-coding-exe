@@ -1,15 +1,17 @@
 import { product } from "./models/product";
 import { store } from "./models/store";
 import { getStore } from "./providers/storeProvider";
+import { storeService } from "./services/storeService";
 const sp: product = {
-    exempt: false,
+    exempt: true,
     id: 1,
-    imported: false,
-    name: "some product",
-    price : 10,
+    imported: true,
+    name: "Walkman",
+    price : 75.99,
 };
 
 const str: store = getStore();
-console.log("hello helloo");
+const sService: storeService = new storeService(str);
 console.log(str);
-console.log(sp);
+const total = sService.calculateTotal(sp, 1);
+console.log(`total ${total}`);
