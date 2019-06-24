@@ -7,7 +7,8 @@
     "tsc": "tsc",
     "start": "ts-node src/tasc.ts",
     "build:live": "nodemon --exec ts-node src/tasc.ts --watch src",
-    "test": "jest --watch"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "author": "Marco Aguirre",
   "license": "ISC",
