@@ -1,8 +1,8 @@
 import { getStore } from "../providers/storeProvider";
 
-describe("store test", () => {
+describe("store tests", () => {
     const str = getStore();
-
+    // first three can be one test, but i like on assert pert test
     it("should create a store", () => {
         expect(str).not
         .toBe(null);
