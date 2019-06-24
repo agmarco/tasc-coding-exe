@@ -17,7 +17,7 @@ basketcol.baskets.forEach((basket, index) => {
     });
     // purchases it
     const receipt = strService.purchase(basket);
-    console.log("Receipt:");
+    console.log(`Receipt ${index + 1}:`);
     receipt.receiptProducts.forEach((rproduct) => {
         console.log(`${rproduct.quantity} ${rproduct.productName} ${rproduct.total}`);
     });
