@@ -1,9 +1,27 @@
 import { basket } from "../models/basket";
-import { getStore } from "../providers/storeProvider";
+import { store } from "../models/store";
 import { storeService } from "../services/storeService";
 
 describe("store service tests", () => {
-  const str = getStore();
+  const str: store = {
+      products: [{id: 0, name: "16lb bag of Skittles", price: 16, exempt: true, imported: false},
+                 {id: 1, name: "Walkman", price: 99.99, exempt: false, imported: false},
+                 {id: 2, name: "Bag of microwave Popcorn", price: 0.99, exempt: true, imported: false},
+                 {id: 3, name: "Imported bag of Vanilla-Hazelnut Coffee", price: 11, imported: true, exempt: true},
+                 {id: 4, name: "Imported Vespa", price: 15001.25, imported: true, exempt: false},
+                 {id: 5, name: "Imported crate of Almond Snickers", price: 75.99, imported: true, exempt: true},
+                 {id: 6, name: "Discman", price: 55, exempt: false, imported: false},
+                 {id: 7, name: "Imported Bottle of Wine", price: 10, imported: true, exempt: false},
+                 {id: 8, name: "300# bag of Fair-Trade Coffee", price: 997.99, exempt: true, imported: false},
+                ],
+      taxrates: {
+        baseRate: 0.1,
+        exemptRate: 0,
+        importRate: 0.05,
+        taxRoundMultiple: 0.05,
+        totalRoundMultiple: 0.01,
+    },
+  };
   const strService = new storeService(str);
   it("should find a product", () => {
     const prod = strService.getProduct(0);
